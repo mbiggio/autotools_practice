@@ -10,6 +10,7 @@ AC_CONFIG_SRCDIR([hello.c])
 AC_CONFIG_HEADERS([config.h])
 # Put autotools auxiliary files in a subdir, so theydon't clutter top dir:
 AC_CONFIG_AUX_DIR([build-aux])
+AC_CONFIG_MACRO_DIR([m4])
 
 # Enable "automake" to simply creating makefiles:
 AM_INIT_AUTOMAKE([1.11 -Wall -Werror])
@@ -17,6 +18,7 @@ AC_CONFIG_FILES([Makefile])
 
 # Look for a C compiler
 AC_PROG_CC
+AC_PROG_CC_C_O
 
 # Perhaps check for: (more) programs, libraries, header files, types,
 # structures, compiler characteristics, library functions, system services.
